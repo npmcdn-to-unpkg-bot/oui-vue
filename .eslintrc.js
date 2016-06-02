@@ -6,6 +6,15 @@ module.exports = {
   plugins: [
     'html'
   ],
+  "env": {
+    "browser": true
+  },
+  // global var
+  "globals": {
+    "Headers": true,
+    "fetch": true,
+    "Request": true
+  },
   // add your custom rules here
   'rules': {
     // allow paren-less arrow functions
