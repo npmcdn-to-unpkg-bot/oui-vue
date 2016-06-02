@@ -1,8 +1,8 @@
 <template>
   <div class="vux-search-box">
     <div class="weui_search_bar" id="search_bar" :class="{weui_search_focusing: !isCancel}">
-      <form class="weui_search_outer">
-        <div class="vux-search-mask" @click="touch" v-show="!isFixed"></div>
+      <form class="weui_search_outer" @submit.prevent="@emit('on-submit', value)">
+      <div class="vux-search-mask" @click="touch" v-show="!isFixed"></div>
         <div class="weui_search_inner">
           <i class="weui_icon_search"></i>
           <input type="text" class="weui_search_input" id="search_input" placeholder="{{placeholder}}" autocomplete="off" required v-model="value" v-el:input/>

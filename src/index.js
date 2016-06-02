@@ -186,6 +186,14 @@ let OUI = {
         let {TimelineItem} = require('./components/timeline')
         return TimelineItem
     },
+    get Step () {
+      let {Step} = require('./components/steps')
+      return Step
+    },
+    get StepItem () {
+      let {StepItem} = require('./components/steps')
+      return StepItem
+    },
     get Tip () {
         return require('./components/tip')
     },
