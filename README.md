@@ -1,27 +1,87 @@
-# oui-vue
+# mint-ui
+> Mobile UI elements for vue.js
 
-> A Vue.js project
+- [Homepage](http://mint-ui.github.io)
+- [Documentation](http://mint-ui.github.io/docs)
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:3000
-npm run dev
-
-# build for production with minification
-npm run build
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
+## Installation
+```shell
+npm i mint-ui -S
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Usage
+
+import all components.
+
+```javascript
+import Vue from 'vue'
+import Mint from 'mint-ui';
+
+Vue.use(Mint);
+```
+
+Or import specified component. (Use [babel-plugin-component](https://www.npmjs.com/package/babel-plugin-component))
+
+```javascript
+import { Cell, Checklist } from 'mint-ui';
+
+Vue.component(Cell.name, Cell);
+Vue.component(Checklist.name, Checklist);
+```
+
+
+Equal to
+
+```javascript
+import Vue from 'vue';
+import Mint from 'mint-ui';
+import 'mint-ui/lib/style.css';
+
+Vue.use(Mint);
+
+// import specified component
+
+import MtRadio from 'mint-ui/lib/radio';
+import 'mint-ui/lib/radio/style.css';
+
+Vue.component(MtRadio.name, MtRadio);
+```
+
+## babel-plugin-component
+- Auto import css file
+- Modular import component
+
+Installation
+```shell
+npm i babel-plugin-component -D
+```
+
+Usage
+
+.babelrc
+```json
+{
+  "plugins": ["other-plugin", ["component", [
+    { "libraryName": "mint-ui", "style": true }
+  ]]]
+}
+```
+
+## Development
+
+```shell
+make dev
+```
+
+## Production
+```shell
+make dist
+```
+
+## Deploy Example
+```shell
+make deploy
+```
+
+## License
+MIT
