@@ -16,7 +16,7 @@
 </template>
 
 <style>
-  @import "../src/style/var.css";
+  @import "./assets/var.css";
   .page-demo {
     padding-bottom: 50px;
 
