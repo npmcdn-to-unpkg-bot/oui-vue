@@ -1,12 +1,13 @@
 {
   "name": "oui-vue",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Mobile UI elements for vue.js",
   "keywords": [
     "component",
     "vue",
     "mobile",
     "eleme",
+    "onlyou",
     "ui"
   ],
   "main": "lib/index.js",
