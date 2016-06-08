@@ -1,6 +1,6 @@
 <template>
   <div class="page-search">
-    <mt-search :value.sync="value" :result="defaultResult | filterBy value"></mt-search>
+    <o-search :value.sync="value" :result="defaultResult | filterBy value"></o-search>
   </div>
 </template>
 

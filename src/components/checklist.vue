@@ -26,7 +26,7 @@ import XCell from 'src/components/cell';
 import 'cell/style.css';
 
 /**
- * mt-checklist
+ * o-checklist
  * @module components/checklist
  * @desc 复选框列表，依赖 cell 组件
  *
@@ -38,10 +38,10 @@ import 'cell/style.css';
  *
  *
  * @example
- * <mt-checklist :value.sync="value" :options="['a', 'b', 'c']"></mt-checklist>
+ * <o-checklist :value.sync="value" :options="['a', 'b', 'c']"></o-checklist>
  */
 export default {
-  name: 'mt-checklist',
+  name: 'o-checklist',
 
   props: {
     max: Number,

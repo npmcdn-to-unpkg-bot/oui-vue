@@ -1,21 +1,21 @@
 <template>
   <div class="nav">
-    <mt-button size="small" @click.prevent="active = 'tab-container1'">tab 1</mt-button>
-    <mt-button size="small" @click.prevent="active = 'tab-container2'">tab 2</mt-button>
-    <mt-button size="small" @click.prevent="active = 'tab-container3'">tab 3</mt-button>
+    <o-button size="small" @click.prevent="active = 'tab-container1'">tab 1</o-button>
+    <o-button size="small" @click.prevent="active = 'tab-container2'">tab 2</o-button>
+    <o-button size="small" @click.prevent="active = 'tab-container3'">tab 3</o-button>
   </div>
   <div class="page-tab-container">
-    <mt-tab-container style="page-tabbar-tab-container" :active="active">
-      <mt-tab-container-item id="tab-container1">
-        <mt-cell v-for="n in 10" title="tab-container 1"></mt-cell>
-      </mt-tab-container-item>
-      <mt-tab-container-item id="tab-container2">
-        <mt-cell v-for="n in 5" title="tab-container 2"></mt-cell>
-      </mt-tab-container-item>
-      <mt-tab-container-item id="tab-container3">
-        <mt-cell v-for="n in 7" title="tab-container 3"></mt-cell>
-      </mt-tab-container-item>
-    </mt-tab-container>
+    <o-tab-container style="page-tabbar-tab-container" :active="active">
+      <o-tab-container-item id="tab-container1">
+        <o-cell v-for="n in 10" title="tab-container 1"></o-cell>
+      </o-tab-container-item>
+      <o-tab-container-item id="tab-container2">
+        <o-cell v-for="n in 5" title="tab-container 2"></o-cell>
+      </o-tab-container-item>
+      <o-tab-container-item id="tab-container3">
+        <o-cell v-for="n in 7" title="tab-container 3"></o-cell>
+      </o-tab-container-item>
+    </o-tab-container>
   </div>
 </template>
 

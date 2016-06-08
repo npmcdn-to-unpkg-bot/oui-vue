@@ -1,33 +1,33 @@
 <template>
   <div>
-    <mt-header fixed title="固定在顶部"></mt-header>
+    <o-header fixed title="固定在顶部"></o-header>
     <div class="page-header-main">
       <div class="page-title">Header</div>
-      <mt-header title="标题过长会隐藏后面的内容啊哈哈哈哈">
-        <mt-button v-link="'/'" icon="back" slot="left">返回</mt-button>
-        <mt-button icon="more" slot="right"></mt-button>
-      </mt-header>
+      <o-header title="标题过长会隐藏后面的内容啊哈哈哈哈">
+        <o-button v-link="'/'" icon="back" slot="left">返回</o-button>
+        <o-button icon="more" slot="right"></o-button>
+      </o-header>
 
-      <mt-header title="多个按钮">
+      <o-header title="多个按钮">
         <div slot="left">
-          <mt-button v-link="'/'" icon="back">返回</mt-button>
-          <mt-button @click="handleClose">关闭</mt-button>
+          <o-button v-link="'/'" icon="back">返回</o-button>
+          <o-button @click="handleClose">关闭</o-button>
         </div>
-        <mt-button icon="more" slot="right"></mt-button>
-      </mt-header>
+        <o-button icon="more" slot="right"></o-button>
+      </o-header>
 
-      <mt-header title="左侧仅文字">
-        <mt-button v-link="'/'" slot="left">返回</mt-button>
-      </mt-header>
+      <o-header title="左侧仅文字">
+        <o-button v-link="'/'" slot="left">返回</o-button>
+      </o-header>
 
-      <mt-header title="右侧仅文字">
-        <mt-button v-link="'/'" slot="right">分享</mt-button>
-      </mt-header>
+      <o-header title="右侧仅文字">
+        <o-button v-link="'/'" slot="right">分享</o-button>
+      </o-header>
 
-      <mt-header title="仅图标">
-        <mt-button v-link="'/'" slot="left" icon="back"></mt-button>
-        <mt-button slot="right" icon="more"></mt-button>
-      </mt-header>
+      <o-header title="仅图标">
+        <o-button v-link="'/'" slot="left" icon="back"></o-button>
+        <o-button slot="right" icon="more"></o-button>
+      </o-header>
     </div>
 
   </div>

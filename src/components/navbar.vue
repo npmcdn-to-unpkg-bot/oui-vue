@@ -6,7 +6,7 @@
 
 <script>
 /**
- * mt-navbar
+ * o-navbar
  * @module components/navbar
  * @desc 顶部 tab，依赖 tab-item
  *
@@ -14,21 +14,21 @@
  * @param {*} selected - 返回 item component 传入的 value
  *
  * @example
- * <mt-navbar :selected.sync="selected">
- *   <mt-tab-item value="订单">
+ * <o-navbar :selected.sync="selected">
+ *   <o-tab-item value="订单">
  *     <span slot="label">订单</span>
- *   </mt-tab-item>
- * </mt-navbar>
+ *   </o-tab-item>
+ * </o-navbar>
  *
- * <mt-navbar :selected.sync="selected" fixed>
- *   <mt-tab-item :value="['传入数组', '也是可以的']">
+ * <o-navbar :selected.sync="selected" fixed>
+ *   <o-tab-item :value="['传入数组', '也是可以的']">
  *     <span slot="label">订单</span>
- *   </mt-tab-item>
- * </mt-navbar>
+ *   </o-tab-item>
+ * </o-navbar>
  *
  */
 export default {
-  name: 'mt-navbar',
+  name: 'o-navbar',
 
   props: {
     fixed: Boolean,

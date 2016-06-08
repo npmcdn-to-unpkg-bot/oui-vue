@@ -23,7 +23,7 @@
 import 'src/assets/font/iconfont.css';
 
 /**
- * mt-cell
+ * o-cell
  * @module components/cell
  * @desc 单元格
  * @param {string} [icon] - 图标，提供 more, back，或者自定义的图标（传入不带前缀的图标类名，最后拼接成 .mintui-xxx）
@@ -36,13 +36,13 @@ import 'src/assets/font/iconfont.css';
  * @param {slot} [icon] - 同 icon, 会覆盖 icon 属性，例如可以传入图片
  *
  * @example
- * <mt-cell title="标题文字" icon="back" is-link value="描述文字"></mt-cell>
- * <mt-cell title="标题文字" icon="back">
+ * <o-cell title="标题文字" icon="back" is-link value="描述文字"></o-cell>
+ * <o-cell title="标题文字" icon="back">
  *   <div slot="value">描述文字啊哈</div>
- * </mt-cell>
+ * </o-cell>
  */
 export default {
-  name: 'mt-cell',
+  name: 'o-cell',
 
   props: {
     icon: String,

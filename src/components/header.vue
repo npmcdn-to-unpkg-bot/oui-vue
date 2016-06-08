@@ -14,7 +14,7 @@
 
 <script>
 /**
- * mt-header
+ * o-header
  * @module components/header
  * @desc 顶部导航
  * @param {boolean} [fixed=false] - 固定顶部
@@ -23,13 +23,13 @@
  * @param {slot} [right] - 显示在右侧区域
  *
  * @example
- * <mt-header title="我是标题" fixed>
- *   <mt-button slot="left" icon="back" @click="handleBack">返回</mt-button>
- *   <mt-button slot="right" icon="more"></mt-button>
- * </mt-header>
+ * <o-header title="我是标题" fixed>
+ *   <o-button slot="left" icon="back" @click="handleBack">返回</o-button>
+ *   <o-button slot="right" icon="more"></o-button>
+ * </o-header>
  */
 export default {
-  name: 'mt-header',
+  name: 'o-header',
 
   props: {
     fixed: Boolean,

@@ -7,17 +7,17 @@
 
 <script>
 /**
- * mt-switch
+ * o-switch
  * @module components/switch
  * @desc 切换按钮
  * @param {boolean} [value] - 绑定值，支持双向绑定
  * @param {slot} - 显示内容
  *
  * @example
- * <mt-switch :value.sync="value"></mt-switch>
+ * <o-switch :value.sync="value"></o-switch>
  */
 export default {
-  name: 'mt-switch',
+  name: 'o-switch',
 
   props: {
     value: Boolean

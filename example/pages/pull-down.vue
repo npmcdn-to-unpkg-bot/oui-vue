@@ -4,17 +4,17 @@
     <p class="page-loadmore-desc">在列表顶端, 按住 - 下拉 - 释放可以获取更多数据</p>
     <p class="page-loadmore-desc">此例请使用手机查看</p>
     <div class="page-loadmore-wrapper" v-el:wrapper :style="{ height: wrapperHeight + 'px' }">
-      <mt-loadmore :top-method="loadTop" :top-status.sync="topStatus">
+      <o-loadmore :top-method="loadTop" :top-status.sync="topStatus">
         <ul class="page-loadmore-list">
           <li v-for="item in list" class="page-loadmore-listitem">{{ item }}</li>
         </ul>
         <div slot="top" class="mint-loadmore-top">
           <span v-show="topStatus !== 'loading'" :class="{ 'is-rotate': topStatus === 'drop' }">↓</span>
           <span v-show="topStatus === 'loading'">
-            <mt-spinner type="snake"></mt-spinner>
+            <o-spinner type="snake"></o-spinner>
           </span>
         </div>
-      </mt-loadmore>
+      </o-loadmore>
     </div>
   </div>
 </template>

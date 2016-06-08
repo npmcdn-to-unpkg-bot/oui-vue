@@ -2,23 +2,23 @@
   <div class="page-switch">
     <div class="page-title">Switch</div>
     <div class="page-part page-switch-padding">
-      <mt-switch :value.sync="value1">
+      <o-switch :value.sync="value1">
         <label v-text="value1"></label>
-      </mt-switch>
+      </o-switch>
     </div>
 
     <div class="page-part page-switch-padding">
-      <mt-switch :value.sync="value4">
+      <o-switch :value.sync="value4">
         <label v-text="value4"></label>
-      </mt-switch>
+      </o-switch>
     </div>
 
-    <mt-cell :title="'选项 ' + value2">
-      <mt-switch :value.sync="value2"></mt-switch>
-    </mt-cell>
-    <mt-cell :title="'选项 ' + value3">
-      <mt-switch :value.sync="value3"></mt-switch>
-    </mt-cell>
+    <o-cell :title="'选项 ' + value2">
+      <o-switch :value.sync="value2"></o-switch>
+    </o-cell>
+    <o-cell :title="'选项 ' + value3">
+      <o-switch :value.sync="value3"></o-switch>
+    </o-cell>
   </div>
 </template>
 

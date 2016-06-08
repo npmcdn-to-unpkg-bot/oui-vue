@@ -1,26 +1,26 @@
 <template>
   <div class="page-progress">
     <h1 class="page-title">Progress</h1>
-    <mt-cell title="默认">
-      <mt-progress></mt-progress>
-    </mt-cell>
-    <mt-cell title="设置 value">
-      <mt-progress :value="20"></mt-progress>
-    </mt-cell>
-    <mt-cell title="左右文字">
-      <mt-progress :value="40">
+    <o-cell title="默认">
+      <o-progress></o-progress>
+    </o-cell>
+    <o-cell title="设置 value">
+      <o-progress :value="20"></o-progress>
+    </o-cell>
+    <o-cell title="左右文字">
+      <o-progress :value="40">
         <div slot="start">0%</div>
         <div slot="end">100%</div>
-      </mt-progress>
-    </mt-cell>
-    <mt-cell title="定义线宽">
-      <mt-progress :value="60" :bar-height="5"></mt-progress>
-    </mt-cell>
+      </o-progress>
+    </o-cell>
+    <o-cell title="定义线宽">
+      <o-progress :value="60" :bar-height="5"></o-progress>
+    </o-cell>
     <div class="page-progress-wrapper">
-      <mt-button size="large" type="primary" @click="uploadFile">上传文件</mt-button>
-      <mt-progress :value.sync="value" v-if="progressVisible" transition="progress-fade">
+      <o-button size="large" type="primary" @click="uploadFile">上传文件</o-button>
+      <o-progress :value.sync="value" v-if="progressVisible" transition="progress-fade">
         <div slot="end">{{ value }}%</div>
-      </mt-progress>
+      </o-progress>
     </div>
   </div>
 </template>

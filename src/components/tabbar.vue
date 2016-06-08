@@ -8,29 +8,29 @@
 
 <script>
 /**
- * mt-tabbar
+ * o-tabbar
  * @module components/tabbar
  * @desc 底部 tab，依赖 tab-item
  * @param {boolean} [fixed=false] - 固定底部
  * @param {*} selected - 返回 item component 传入的 id
  *
  * @example
- * <mt-tabbar :selected.sync="selected">
- *   <mt-tab-item id="订单">
+ * <o-tabbar :selected.sync="selected">
+ *   <o-tab-item id="订单">
  *     <img slot="icon" src="http://placehold.it/100x100">
  *     <span slot="label">订单</span>
- *   </mt-tab-item>
- * </mt-tabbar>
+ *   </o-tab-item>
+ * </o-tabbar>
  *
- * <mt-tabbar :selected.sync="selected" fixed>
- *   <mt-tab-item :id="['传入数组', '也是可以的']">
+ * <o-tabbar :selected.sync="selected" fixed>
+ *   <o-tab-item :id="['传入数组', '也是可以的']">
  *     <img slot="icon" src="http://placehold.it/100x100">
  *     <span slot="label">订单</span>
- *   </mt-tab-item>
- * </mt-tabbar>
+ *   </o-tab-item>
+ * </o-tabbar>
  */
 export default {
-  name: 'mt-tabbar',
+  name: 'o-tabbar',
 
   props: {
     fixed: Boolean,

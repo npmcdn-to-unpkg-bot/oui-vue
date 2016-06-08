@@ -2,30 +2,30 @@
   <div class="page-swipe">
     <h1 class="page-title">Swipe</h1>
     <p class="page-swipe-desc">基础用法</p>
-    <mt-swipe :auto="4000">
-      <mt-swipe-item class="slide1">1</mt-swipe-item>
-      <mt-swipe-item class="slide2">2</mt-swipe-item>
-      <mt-swipe-item class="slide3">3</mt-swipe-item>
-    </mt-swipe>
+    <o-swipe :auto="4000">
+      <o-swipe-item class="slide1">1</o-swipe-item>
+      <o-swipe-item class="slide2">2</o-swipe-item>
+      <o-swipe-item class="slide3">3</o-swipe-item>
+    </o-swipe>
 
     <p class="page-swipe-desc">隐藏 indicators</p>
-    <mt-swipe :show-indicators="false">
-      <mt-swipe-item class="slide1">1</mt-swipe-item>
-      <mt-swipe-item class="slide2">2</mt-swipe-item>
-      <mt-swipe-item class="slide3">3</mt-swipe-item>
-    </mt-swipe>
+    <o-swipe :show-indicators="false">
+      <o-swipe-item class="slide1">1</o-swipe-item>
+      <o-swipe-item class="slide2">2</o-swipe-item>
+      <o-swipe-item class="slide3">3</o-swipe-item>
+    </o-swipe>
 
     <p class="page-swipe-desc">取消自动播放</p>
-    <mt-swipe :auto="0">
-      <mt-swipe-item class="slide1">1</mt-swipe-item>
-      <mt-swipe-item class="slide2">2</mt-swipe-item>
-      <mt-swipe-item class="slide3">3</mt-swipe-item>
-    </mt-swipe>
+    <o-swipe :auto="0">
+      <o-swipe-item class="slide1">1</o-swipe-item>
+      <o-swipe-item class="slide2">2</o-swipe-item>
+      <o-swipe-item class="slide3">3</o-swipe-item>
+    </o-swipe>
 
     <p class="page-swipe-desc">单个幻灯片</p>
-    <mt-swipe :show-indicators="false">
-      <mt-swipe-item class="slide1">SINGLE SLIDE</mt-swipe-item>
-    </mt-swipe>
+    <o-swipe :show-indicators="false">
+      <o-swipe-item class="slide1">SINGLE SLIDE</o-swipe-item>
+    </o-swipe>
   </div>
 </template>
 

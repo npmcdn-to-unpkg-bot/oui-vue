@@ -3,46 +3,46 @@
     <div class="page-wrap">
       <div class="page-title">Tabbar</div>
       <div>
-        <mt-cell class="page-part" title="当前选中" :value="selected"></mt-cell>
+        <o-cell class="page-part" title="当前选中" :value="selected"></o-cell>
       </div>
 
-      <mt-tab-container style="page-tabbar-container" :active.sync="selected">
-        <mt-tab-container-item id="外卖">
-          <mt-cell v-for="n in 10" :title="'餐厅 ' + $index"></mt-cell>
-        </mt-tab-container-item>
-        <mt-tab-container-item id="订单">
-          <mt-cell v-for="n in 5" :title="'订单 ' + $index"></mt-cell>
-        </mt-tab-container-item>
-        <mt-tab-container-item id="发现">
-          <mt-cell v-for="n in 7" :title="'发现 ' + $index"></mt-cell>
-        </mt-tab-container-item>
-        <mt-tab-container-item id="我的">
+      <o-tab-container style="page-tabbar-container" :active.sync="selected">
+        <o-tab-container-item id="外卖">
+          <o-cell v-for="n in 10" :title="'餐厅 ' + $index"></o-cell>
+        </o-tab-container-item>
+        <o-tab-container-item id="订单">
+          <o-cell v-for="n in 5" :title="'订单 ' + $index"></o-cell>
+        </o-tab-container-item>
+        <o-tab-container-item id="发现">
+          <o-cell v-for="n in 7" :title="'发现 ' + $index"></o-cell>
+        </o-tab-container-item>
+        <o-tab-container-item id="我的">
           <div class="page-part">
-            <mt-cell v-for="n in 12" :title="'我的 ' + $index"></mt-cell>
+            <o-cell v-for="n in 12" :title="'我的 ' + $index"></o-cell>
           </div>
-          <mt-button v-link="'/'" style="margin: 0 10px;" type="danger" size="large">退出</mt-button>
-        </mt-tab-container-item>
-      </mt-tab-container>
+          <o-button v-link="'/'" style="margin: 0 10px;" type="danger" size="large">退出</o-button>
+        </o-tab-container-item>
+      </o-tab-container>
     </div>
 
-    <mt-tabbar :selected.sync="selected">
-      <mt-tab-item id="外卖">
+    <o-tabbar :selected.sync="selected">
+      <o-tab-item id="外卖">
         <img slot="icon" src="../assets/100x100.png">
         外卖
-      </mt-tab-item>
-      <mt-tab-item id="订单">
+      </o-tab-item>
+      <o-tab-item id="订单">
         <img slot="icon" src="../assets/100x100.png">
         订单
-      </mt-tab-item>
-      <mt-tab-item id="发现">
+      </o-tab-item>
+      <o-tab-item id="发现">
         <img slot="icon" src="../assets/100x100.png">
         发现
-      </mt-tab-item>
-      <mt-tab-item id="我的">
+      </o-tab-item>
+      <o-tab-item id="我的">
         <img slot="icon" src="../assets/100x100.png">
         我的
-      </mt-tab-item>
-    </mt-tabbar>
+      </o-tab-item>
+    </o-tabbar>
   </div>
 </template>
 

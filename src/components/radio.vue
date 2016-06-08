@@ -26,7 +26,7 @@ import XCell from 'src/components/cell';
 import 'cell/style.css';
 
 /**
- * mt-radio
+ * o-radio
  * @module components/radio
  * @desc 单选框列表，依赖 cell 组件
  *
@@ -36,10 +36,10 @@ import 'cell/style.css';
  * @param {string} [align=left] - checkbox 对齐位置，`left`, `right`
  *
  * @example
- * <mt-radio :value.sync="value" :options="['a', 'b', 'c']"></mt-radio>
+ * <o-radio :value.sync="value" :options="['a', 'b', 'c']"></o-radio>
  */
 export default {
-  name: 'mt-radio',
+  name: 'o-radio',
 
   props: {
     title: String,

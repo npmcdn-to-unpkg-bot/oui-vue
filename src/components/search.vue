@@ -40,7 +40,7 @@ import XCell from 'src/components/cell';
 import 'cell/style.css';
 
 /**
- * mt-search
+ * o-search
  * @module components/search
  * @desc 搜索框
  * @param {string} value - 绑定值
@@ -50,13 +50,13 @@ import 'cell/style.css';
  * @param {slot} 结果列表
  *
  * @example
- * <mt-search :value.sync="value" :result.sync="result"></mt-search>
- * <mt-search :value.sync="value">
- *   <mt-cell v-for="item in result" :title="item"></mt-cell>
- * </mt-search>
+ * <o-search :value.sync="value" :result.sync="result"></o-search>
+ * <o-search :value.sync="value">
+ *   <o-cell v-for="item in result" :title="item"></o-cell>
+ * </o-search>
  */
 export default {
-  name: 'mt-search',
+  name: 'o-search',
 
   data() {
     return {

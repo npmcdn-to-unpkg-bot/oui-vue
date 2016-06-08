@@ -2,35 +2,35 @@
   <div class="page-radio">
     <div class="page-title">radio</div>
 
-    <mt-radio
+    <o-radio
       class="page-part"
       title="单选框列表"
       :value.sync="value1"
       :options="options1">
-    </mt-radio>
+    </o-radio>
 
     <div>
-      <mt-cell title="选中的项">{{ value1 | json }}</mt-cell>
+      <o-cell title="选中的项">{{ value1 | json }}</o-cell>
     </div>
 
-    <mt-radio
+    <o-radio
       class="page-part"
       title="第二个单选框列表"
       :value.sync="value2"
       :options="options2">
-    </mt-radio>
+    </o-radio>
 
     <div>
-      <mt-cell title="选中的项">{{ value2 | json }}</mt-cell>
+      <o-cell title="选中的项">{{ value2 | json }}</o-cell>
     </div>
 
-    <mt-radio
+    <o-radio
       align="right"
       class="page-part"
       title="右对齐"
       :value.sync="value3"
       :options="options3">
-    </mt-radio>
+    </o-radio>
   </div>
 </template>
 

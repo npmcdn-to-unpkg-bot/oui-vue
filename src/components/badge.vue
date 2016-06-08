@@ -9,7 +9,7 @@
 
 <script>
 /**
- * mt-badge
+ * o-badge
  * @module components/badge
  * @desc 单选框列表
  * @param {string} [type=primary] 组件样式，可选 primary, error, success, warning
@@ -17,11 +17,11 @@
  * @param {string} [size=normal] - 尺寸，接受 normal, small, large
  *
  * @example
- * <mt-badge color="error">错误</mt-badge>
- * <mt-badge color="#333">30</mt-badge>
+ * <o-badge color="error">错误</o-badge>
+ * <o-badge color="#333">30</o-badge>
  */
 export default {
-  name: 'mt-badge',
+  name: 'o-badge',
 
   props: {
     color: String,

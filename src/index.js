@@ -5,7 +5,7 @@ const modules = requireAll(require.context('src/components', true, /\.vue$/));
 const components = {};
 
 modules.forEach(item => {
-  components[item.name.replace(/mt-/, '')] = item;
+  components[item.name.replace(/o-/, '')] = item;
 });
 
 // published components
@@ -42,14 +42,14 @@ module.exports = Object.assign({}, {
       const item = modules[key];
       Vue.component(item.name, item);
     });
-    Vue.component('mt-loadmore', Loadmore);
-    Vue.component('mt-actionsheet', Actionsheet);
-    Vue.component('mt-popup', Popup);
-    Vue.component('mt-swipe', Swipe);
-    Vue.component('mt-swipe-item', SwipeItem);
-    Vue.component('mt-range', MintRange);
-    Vue.component('mt-picker', Picker);
-    Vue.component('mt-progress', MintProgress);
+    Vue.component('o-loadmore', Loadmore);
+    Vue.component('o-actionsheet', Actionsheet);
+    Vue.component('o-popup', Popup);
+    Vue.component('o-swipe', Swipe);
+    Vue.component('o-swipe-item', SwipeItem);
+    Vue.component('o-range', MintRange);
+    Vue.component('o-picker', Picker);
+    Vue.component('o-progress', MintProgress);
     Vue.use(infiniteScroll);
     Vue.use(lazyload, {
       loading: require('./assets/loading-spin.svg'),

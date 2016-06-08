@@ -19,7 +19,7 @@
 import 'src/assets/font/iconfont.css';
 
 /**
- * mt-header
+ * o-header
  * @module components/button
  * @desc 按钮
  * @param {string} [type=default] - 显示类型，接受 default, primary, danger
@@ -31,10 +31,10 @@ import 'src/assets/font/iconfont.css';
  * @param {slot} [icon] 显示图标
  *
  * @example
- * <mt-button size="large" icon="back" type="primary">按钮</mt-button>
+ * <o-button size="large" icon="back" type="primary">按钮</o-button>
  */
 export default {
-  name: 'mt-button',
+  name: 'o-button',
 
   props: {
     icon: String,
