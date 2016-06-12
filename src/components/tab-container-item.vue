@@ -3,6 +3,7 @@
 </template>
 
 <script>
+import '../style/empty.css';
 /**
  * o-tab-container-item
  * @desc 搭配 tab-container 使用
