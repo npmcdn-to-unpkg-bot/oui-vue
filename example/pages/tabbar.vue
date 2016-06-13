@@ -6,7 +6,7 @@
         <o-cell class="page-part" title="当前选中" :value="selected"></o-cell>
       </div>
 
-      <o-tab-container style="page-tabbar-container" :active.sync="selected">
+      <o-tab-container class="page-tabbar-container" :active.sync="selected">
         <o-tab-container-item id="外卖">
           <o-cell v-for="n in 10" :title="'餐厅 ' + $index"></o-cell>
         </o-tab-container-item>
