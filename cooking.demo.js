@@ -9,12 +9,13 @@ cooking.set({
   devServer: {
     port: 8789,
     hostname: require('my-local-ip')(),
-    publicPath: '/'
+    publicPath: '/',
+    log: false
   },
 
   clean: true,
   hash: true,
-  publicPath: '/mint-ui/',
+  publicPath: '/oui/',
   assetsPath: 'static',
   urlLoaderLimit: 10000,
   extractCSS: true,

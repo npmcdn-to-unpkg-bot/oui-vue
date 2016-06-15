@@ -33,19 +33,19 @@ cooking.add('externals', {
   },
   'src/components/cell': {
     root: 'MINT.index.cell',
-    commonjs: 'mint-ui/lib/cell',
-    commonjs2: 'mint-ui/lib/cell',
-    amd: 'mint-ui/lib/cell'
+    commonjs: 'oui-vue/lib/cell',
+    commonjs2: 'oui-vue/lib/cell',
+    amd: 'oui-vue/lib/cell'
   },
   'cell/style.css': {
-    commonjs: 'mint-ui/lib/cell/style.css',
-    commonjs2: 'mint-ui/lib/cell/style.css',
-    amd: 'mint-ui/lib/cell/style.css'
+    commonjs: 'oui-vue/lib/cell/style.css',
+    commonjs2: 'oui-vue/lib/cell/style.css',
+    amd: 'oui-vue/lib/cell/style.css'
   },
   'src/assets/font/iconfont.css': {
-    commonjs: 'mint-ui/lib/font/style.css',
-    commonjs2: 'mint-ui/lib/font/style.css',
-    amd: 'mint-ui/lib/font/style.css'
+    commonjs: 'oui-vue/lib/font/style.css',
+    commonjs2: 'oui-vue/lib/font/style.css',
+    amd: 'oui-vue/lib/font/style.css'
   }
 });
 
