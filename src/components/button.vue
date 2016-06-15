@@ -87,12 +87,13 @@ export default {
       color: inherit;
       display: block;
       font-size: 18px;
-      height: 41px;
-      line-height: 2.6rem;
+      height: 40px;
+      line-height: 40px;
       outline: 0;
       overflow: hidden;
       position: relative;
       text-align: center;
+      padding: 0;
 
       &::after {
         background-color: #000;
@@ -151,14 +152,14 @@ export default {
 
       @modifier normal {
         display: inline-block;
-        padding: 0 0.75rem;
+        padding: 0 .5em;
       }
 
       @modifier small {
         display: inline-block;
         font-size: 14px;
-        padding: 0 0.75rem;
-        line-height: 2rem;
+        padding: 0 .5em;
+        line-height: 33px;
         height: 33px;
       }
 
