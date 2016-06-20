@@ -21,7 +21,7 @@
   "swipe": ["src/components/swipe.js"],
   "swipe-item": ["src/components/swipe-item.js"],
   "range": ["src/components/range.vue"],
-  "picker": ["src/components/picker.js"],
+  "picker": ["src/components/picker.vue"],
   "progress": ["src/components/progress.js"],
   "toast": ["src/components/toast.js"],
   "indicator": ["src/components/indicator.js"],

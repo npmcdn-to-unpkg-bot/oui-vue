@@ -3,7 +3,7 @@ import uppercamelcase from 'uppercamelcase';
 const requireAll = requireContext => {
   return requireContext.keys().map(requireContext);
 };
-const modules = requireAll(require.context('src/components', true, /\.vue$/));
+const modules = requireAll(require.context('src/components', false, /\.vue$/));
 const components = {};
 
 modules.forEach(item => {
@@ -15,7 +15,6 @@ modules.forEach(item => {
 import Loadmore from './components/loadmore.js';
 import Swipe from './components/swipe.js';
 import SwipeItem from './components/swipe-item.js';
-import Picker from './components/picker.js';
 import Progress from './components/progress.js';
 
 // published services
@@ -36,7 +35,6 @@ module.exports = Object.assign({}, {
     Vue.component(Loadmore.name, Loadmore);
     Vue.component(Swipe.name, Swipe);
     Vue.component(SwipeItem.name, SwipeItem);
-    Vue.component(Picker.name, Picker);
     Vue.component(Progress.name, Progress);
     Vue.use(InfiniteScroll);
     Vue.use(Lazyload, {
@@ -52,6 +50,5 @@ module.exports = Object.assign({}, {
   SwipeItem,
   InfiniteScroll,
   Lazyload,
-  Picker,
   Progress
 }, components);
