@@ -11,11 +11,6 @@ modules.forEach(item => {
   components[name] = item;
 });
 
-// published components
-import Loadmore from './components/loadmore.js';
-import Swipe from './components/swipe.js';
-import SwipeItem from './components/swipe-item.js';
-
 // published services
 import Toast from './components/toast.js';
 import Indicator from './components/indicator.js';
@@ -31,9 +26,6 @@ module.exports = Object.assign({}, {
       const item = modules[key];
       Vue.component(item.name, item);
     });
-    Vue.component(Loadmore.name, Loadmore);
-    Vue.component(Swipe.name, Swipe);
-    Vue.component(SwipeItem.name, SwipeItem);
     Vue.use(InfiniteScroll);
     Vue.use(Lazyload, {
       loading: require('./assets/loading-spin.svg'),
@@ -43,9 +35,6 @@ module.exports = Object.assign({}, {
   Toast,
   Indicator,
   MessageBox,
-  Loadmore,
-  Swipe,
-  SwipeItem,
   InfiniteScroll,
   Lazyload
 }, components);
