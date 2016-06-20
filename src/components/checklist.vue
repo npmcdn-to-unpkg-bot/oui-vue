@@ -23,7 +23,6 @@
 
 <script>
 import XCell from 'src/components/cell';
-import 'cell/style.css';
 
 /**
  * o-checklist

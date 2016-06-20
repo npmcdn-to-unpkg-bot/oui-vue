@@ -13,8 +13,6 @@ modules.forEach(item => {
 
 // published components
 import Loadmore from './components/loadmore.js';
-import Actionsheet from './components/actionsheet.js';
-import Popup from './components/popup.js';
 import Swipe from './components/swipe.js';
 import SwipeItem from './components/swipe-item.js';
 import Range from './components/range.js';
@@ -22,16 +20,13 @@ import Picker from './components/picker.js';
 import Progress from './components/progress.js';
 
 // published services
-import Toast from 'vue-toast-mobile';
-import 'vue-toast-mobile/lib/index.css';
-import Indicator from 'mint-indicator';
-import 'mint-indicator/lib/index.css';
-import MessageBox from 'babel!vue-msgbox/src';
-import './style/message-box.css';
+import Toast from './components/toast.js';
+import Indicator from './components/indicator.js';
+import MessageBox from './components/message-box.js';
 
 // published directives
-import infiniteScroll from 'vue-infinite-scroll';
-import lazyload from 'vue-lazyload';
+import InfiniteScroll from './components/infinite-scroll.js';
+import Lazyload from './components/lazyload.js';
 
 module.exports = Object.assign({}, {
   install(Vue) {
@@ -40,15 +35,13 @@ module.exports = Object.assign({}, {
       Vue.component(item.name, item);
     });
     Vue.component(Loadmore.name, Loadmore);
-    Vue.component(Actionsheet.name, Actionsheet);
-    Vue.component(Popup.name, Popup);
     Vue.component(Swipe.name, Swipe);
     Vue.component(SwipeItem.name, SwipeItem);
     Vue.component(Range.name, Range);
     Vue.component(Picker.name, Picker);
     Vue.component(Progress.name, Progress);
-    Vue.use(infiniteScroll);
-    Vue.use(lazyload, {
+    Vue.use(InfiniteScroll);
+    Vue.use(Lazyload, {
       loading: require('./assets/loading-spin.svg'),
       try: 3
     });
@@ -56,13 +49,11 @@ module.exports = Object.assign({}, {
   Toast,
   Indicator,
   MessageBox,
-  Popup,
   Loadmore,
-  Actionsheet,
   Swipe,
   SwipeItem,
-  'InfiniteScroll': infiniteScroll,
-  'Lazyload': lazyload,
+  InfiniteScroll,
+  Lazyload,
   Range,
   Picker,
   Progress
