@@ -41,7 +41,7 @@
       },
 
       openIndicatorWithText() {
-        Indicator.open('加载中...');
+        Indicator.open({ spinnerType: 'triple-bounce', text: '加载中...' });
         setTimeout(() => Indicator.close(), 2000);
       }
     },
