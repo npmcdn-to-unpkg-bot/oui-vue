@@ -20,7 +20,7 @@
   "loadmore": ["src/components/loadmore.js"],
   "swipe": ["src/components/swipe.js"],
   "swipe-item": ["src/components/swipe-item.js"],
-  "range": ["src/components/range.js"],
+  "range": ["src/components/range.vue"],
   "picker": ["src/components/picker.js"],
   "progress": ["src/components/progress.js"],
   "toast": ["src/components/toast.js"],

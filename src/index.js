@@ -15,7 +15,6 @@ modules.forEach(item => {
 import Loadmore from './components/loadmore.js';
 import Swipe from './components/swipe.js';
 import SwipeItem from './components/swipe-item.js';
-import Range from './components/range.js';
 import Picker from './components/picker.js';
 import Progress from './components/progress.js';
 
@@ -37,7 +36,6 @@ module.exports = Object.assign({}, {
     Vue.component(Loadmore.name, Loadmore);
     Vue.component(Swipe.name, Swipe);
     Vue.component(SwipeItem.name, SwipeItem);
-    Vue.component(Range.name, Range);
     Vue.component(Picker.name, Picker);
     Vue.component(Progress.name, Progress);
     Vue.use(InfiniteScroll);
@@ -54,7 +52,6 @@ module.exports = Object.assign({}, {
   SwipeItem,
   InfiniteScroll,
   Lazyload,
-  Range,
   Picker,
   Progress
 }, components);
