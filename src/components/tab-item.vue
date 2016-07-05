@@ -32,6 +32,8 @@ export default {
 </script>
 
 <style lang="css">
+  @import "../style/var.css";
+
   @component-namespace mint {
     @component tab-item {
       display: block;

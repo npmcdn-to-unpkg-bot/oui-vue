@@ -101,8 +101,10 @@ export default {
       z-index: 1;
 
       @descendent inner {
+        align-items: center;
         background-color: $color-white;
         border-radius: 2px;
+        display: flex;
         flex: 1;
         height: 28px;
         padding: 4px 6px;
@@ -122,11 +124,12 @@ export default {
       }
 
       @descendent placeholder {
+        align-items: center;
         color: #9b9b9b;
+        display: flex;
         font-size: 12px;
-        padding: 14px;
+        justify-content: center;
         position: absolute 0 0 0 0;
-        text-align: center;
 
         .mintui-search {
           font-size: 12px;
