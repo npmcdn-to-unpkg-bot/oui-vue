@@ -1,6 +1,6 @@
 {
   "name": "oui-vue",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "description": "Mobile UI elements for vue.js",
   "keywords": [
     "component",
@@ -18,7 +18,8 @@
   "scripts": {
     "dev": "cooking watch -c cooking.demo.js",
     "dist": "cooking build -p && mv lib/index/* lib/ && rm -rf lib/index",
-    "deploy": "cooking build -c cooking.demo.js -p && gh-pages -d example/dist --remote eleme"
+    "deploy": "cooking build -c cooking.demo.js -p && gh-pages -d example/dist --remote eleme",
+    "prepublish": "npm run dist"
   },
   "repository": {
     "type": "git",
@@ -35,16 +36,15 @@
   "devDependencies": {
     "fastclick": "^1.0.6",
     "gh-pages": "^0.11.0",
-    "raf.js": "0.0.4",
-    "wind-dom": "0.0.3",
     "my-local-ip": "^1.0.0",
+    "raf.js": "0.0.4",
     "uppercamelcase": "^1.1.0",
     "vue-clickoutside": "0.0.4",
     "vue-infinite-scroll": "^0.2.3",
     "vue-lazyload": "^0.4.3",
     "vue-msgbox": "^0.2.10",
     "vue-popup": "^0.1.8",
-    "vue-swipe": "^0.2.6",
-    "vue-toast-mobile": "^0.1.3"
+    "vue-toast-mobile": "^0.1.3",
+    "wind-dom": "0.0.3"
   }
 }

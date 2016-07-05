@@ -1,7 +1,23 @@
-<script>
-  import { SwipeItem } from 'vue-swipe';
-  require('vue-swipe/dist/vue-swipe.css');
+<template>
+  <div class="swipe-item">
+    <slot></slot>
+  </div>
+</template>
 
-  SwipeItem.name = 'o-swipe-item';
-  export default SwipeItem;
+<script type="text/ecmascript-6">
+  export default {
+    name: 'o-swipe-item',
+
+    ready() {
+      this.$dispatch('swipeItemCreated', this);
+    },
+
+    detached() {
+      this.$dispatch('swipeItemDestroyed', this);
+    },
+
+    destroyed() {
+      this.$dispatch('swipeItemDestroyed', this);
+    }
+  };
 </script>
